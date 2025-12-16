@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WhatsApp Wrapped</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>WhatsApp Wrapped</h1>
+  <form id="upload-form" enctype="multipart/form-data">
+    <label for="chat-file">Upload your WhatsApp .txt file:</label><br />
+    <input type="file" id="chat-file" name="chat" accept=".txt" required /><br /><br />
+    <button type="submit">Analyze</button>
+  </form>
+
+  <div id="results"></div>
+  <!-- Load Chart.js from CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
