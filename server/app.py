@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-from analysis import run_analysis
+from server.analysis import run_analysis
 import traceback
 
 app = Flask(__name__)
